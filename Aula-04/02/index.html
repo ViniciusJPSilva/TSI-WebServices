@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CEP</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="site-identity">
+      <h1>Busca CEP</h1>
+    </div>
+    <nav class="site-navigation">
+      <ul class="nav">
+        <li><a href="#">Sobre</a></li>
+        <li><a href="#">Buscar</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="form_section">
+      <form action="javascript:createRequest()">
+        <label for="uf">Estado: </label>
+        <input list="ufs" id="uf" type="text" name="uf" required>
+
+        <datalist id="ufs">
+          <option value="AC" selected>AC</option>
+          <option value="AL">AL</option>
+          <option value="AP">AP</option>
+          <option value="AM">AM</option>
+          <option value="BA">BA</option>
+          <option value="CE">CE</option>
+          <option value="DF">DF</option>
+          <option value="ES">ES</option>
+          <option value="GO">GO</option>
+          <option value="MA">MA</option>
+          <option value="MT">MT</option>
+          <option value="MS">MS</option>
+          <option value="MG">MG</option>
+          <option value="PA">PA</option>
+          <option value="PB">PB</option>
+          <option value="PR">PR</option>
+          <option value="PE">PE</option>
+          <option value="PI">PI</option>
+          <option value="RJ">RJ</option>
+          <option value="RN">RN</option>
+          <option value="RS">RS</option>
+          <option value="RO">RO</option>
+          <option value="RR">RR</option>
+          <option value="SC">SC</option>
+          <option value="SP">SP</option>
+          <option value="SE">SE</option>
+          <option value="TO">TO</option>
+        </datalist>
+
+        <label for="city">Cidade: </label>
+        <input id="city" type="text" name="city" required>
+
+        <label for="street">Rua: </label>
+        <input id="street" type="text" name="street" required>
+
+        <br />
+        <input type="submit" value="Buscar">
+      </form>
+    </section>
+
+    <hr />
+    <br />
+    <div id="result">
+
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

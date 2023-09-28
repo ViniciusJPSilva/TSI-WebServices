@@ -1,0 +1,147 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Set general styles for the form */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Set styles for the label */
+label {
+    margin-bottom: 0.5rem;
+}
+
+/* Set styles for the input fields */
+input[type="text"],
+input[type="submit"] {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Set styles for the datalist */
+datalist {
+    display: none;
+}
+
+/* Set styles for the select input */
+select {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Set styles for the submit button */
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    width: 50%;
+}
+
+table {
+    border-collapse: collapse;
+    width: 90%;
+    margin: 5vh auto;
+}
+
+td,
+th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #007bff;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.site-header {
+    border-bottom: 1px solid #ccc;
+    padding: .5em 1em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.site-identity h1 {
+    font-size: 1.5em;
+    margin: .6em 0;
+    display: inline-block;
+    color: #007bff !important;
+    text-decoration: underline;
+}
+
+
+.site-navigation ul,
+.site-navigation li {
+    margin: 0;
+    padding: 0;
+}
+
+.site-navigation li {
+    display: inline-block;
+    margin: 1.4em 1em 1em 1em;
+}
+
+#form_section {
+    width: 20vw;
+    margin: 5vh auto;
+}
+
+#result * {
+    text-align: center;
+}
+
+#result h4 {
+    width: 50%;
+    margin: 0 auto;
+    padding: 15px 10px 15px 50px;
+    font-size: 15px;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    color: #9F6000;
+    background-color: #FEEFB3;
+    background-image: url('https://i.imgur.com/Z8q7ww7.png');
+}
+
+.msg_error {
+    color: #D8000C !important;
+    background-color: #FFBABA !important;
+    background-image: url('https://i.imgur.com/GnyDvKN.png') !important;
+}
+
+/* Set responsive styles */
+@media (max-width: 600px) {
+
+    /* Adjust the width of the input fields on smaller screens */
+    input[type="text"],
+    input[type="submit"],
+    select {
+        width: auto;
+    }
+}
