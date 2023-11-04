@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<biblioteca>
+    <endereco cep="36200001">
+        <numero>42</numero>
+        <complemento>Bloco 101</complemento>
+    </endereco>
+    <livros>
+        <livro quantidade="5" emprestados="3">
+            <titulo>Java como programar</titulo>
+            <paginas>500</paginas>
+            <autor>Deitel</autor>
+        </livro>
+        <livro quantidade="1" emprestados="0">
+            <titulo>C++ como programar</titulo>
+            <paginas>300</paginas>
+            <autor>Deitel</autor>
+        </livro>
+        <livro quantidade="1" emprestados="1">
+            <titulo>Sistemas Distribuídos</titulo>
+            <paginas>500</paginas>
+            <autor>Andrew S. Tanenbaum</autor>
+            <autor>Maarlen Van Steen</autor>
+        </livro>
+    </livros>
+</biblioteca>
